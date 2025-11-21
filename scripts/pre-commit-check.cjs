@@ -69,21 +69,26 @@ function main() {
     process.exit(1);
   }
 
-  // Até aqui: todos os arquivos estão dentro do app + pacotes permitidos.
-
-  // Agora vem o ponto: rodar só as regras do app correto.
-  // Exemplo: turbo run lint --filter=storefront...
-  try {
-    runScopedLint(appName);
-  } catch (err) {
-    console.error(
-      `\n❌ Lint falhou para o app "${appName}". Corrija os erros antes de commitar.\n`
+  // Escopo platform não tem app correspondente no workspace.
+  // Ele serve só pra infra/root. Então pulamos lint automaticamente.
+  if (scope === "platform") {
+    console.log(
+      "\nℹ️ Escopo 'platform': pulando lint (não há pacote 'platform' no workspace)."
     );
-    process.exit(err.status || 1);
+    console.log("\n✅ Pré-commit OK para mudanças de root/infra.");
+    process.exit(0);
   }
 
-  console.log("\n✅ Pré-commit OK para o app:", appName);
-  process.exit(0);
+  try {
+    runScopedLint(appName);
+  } catch {
+    console.error(
+      `\n❌ Lint falhou para "${appName}". Corrija antes de commitar.\n`
+    );
+    process.exit(1);
+  }
+
+  console.log("\n✅ Pré-commit OK.");
 }
 
 if (require.main === module) {

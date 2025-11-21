@@ -43,7 +43,22 @@ const SCOPE_CONFIG = {
   // se quiser um time de plataforma que pode tudo:
   platform: {
     appName: "platform",
-    allowedPatterns: [/^apps\//, /^packages\//],
+    allowedPatterns: [
+      /^apps\//,
+      /^packages\//,
+
+      // ✅ root permitido só pra plataforma
+      /^scripts\//,
+      /^\.husky\//,
+      /^turbo\.json$/,
+      /^package\.json$/,
+      /^pnpm-workspace\.yaml$/,
+      /^pnpm-lock\.yaml$/,
+      /^README\.md$/,
+      /^tsconfig\.json$/,
+      /^\.editorconfig$/,
+      /^\.gitignore$/,
+    ],
   },
 };
 
