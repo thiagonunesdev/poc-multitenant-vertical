@@ -1,0 +1,29 @@
+{
+  "name": "my-turborepo",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "dev:servers": "concurrently \"pnpm dev:tenant-server\" \"pnpm dev:i18n-server\" \"pnpm dev:announcement-server\"",
+    "dev:tenant-server": "json-server --watch servers/tenant/db-tenant.json --port 3003",
+    "dev:i18n-server": "json-server --watch servers/i18n/db-i18n.json --port 3001",
+    "dev:announcement-server": "json-server --watch servers/announcement/db-announcement.json --port 3002",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types",
+    "generate:ui": "node scripts/shadcn-to-ui.cjs",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "json-server": "1.0.0-beta.3",
+    "prettier": "^3.6.2",
+    "turbo": "^2.6.1",
+    "typescript": "5.9.2",
+    "husky": "^8.0.0"
+  },
+  "packageManager": "pnpm@9.0.0",
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "announcements": [
+    {
+      "id": 1,
+      "tenantId": "acme_motors",
+      "slug": "mega-feirao-suv-2025",
+      "lang": "pt-BR",
+      "title": "Mega Feirão de SUVs 2025",
+      "description": "Taxas especiais, bônus na troca e 1 ano de seguro grátis.",
+      "ctaLabel": "Ver ofertas",
+      "heroImage": "/media/acme_motors/suv-feirao-2025.jpg",
+      "validUntil": "2025-12-31",
+      "cars": [
+        {
+          "model": "ACME Trail 2.0",
+          "year": 2025,
+          "priceFrom": 129900,
+          "image": "/media/acme_motors/trail-20.jpg",
+          "highlight": true
+        },
+        {
+          "model": "ACME Urban 1.6",
+          "year": 2024,
+          "priceFrom": 89900,
+          "image": "/media/acme_motors/urban-16.jpg",
+          "highlight": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "tenantId": "acme_motors",
+      "slug": "mega-feirao-suv-2025",
+      "lang": "en-US",
+      "title": "SUV Mega Sale 2025",
+      "description": "Special rates, trade-in bonus and 1 year free insurance.",
+      "ctaLabel": "View deals",
+      "heroImage": "/media/acme_motors/suv-feirao-2025.jpg",
+      "validUntil": "2025-12-31",
+      "cars": [
+        {
+          "model": "ACME Trail 2.0",
+          "year": 2025,
+          "priceFrom": 25980,
+          "currency": "USD",
+          "image": "/media/acme_motors/trail-20.jpg",
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "tenantId": "acme_motors",
+      "slug": "mega-feirao-suv-2025",
+      "lang": "es-ES",
+      "title": "Gran Feria de SUVs 2025",
+      "description": "Tasas especiales y bono por tu usado.",
+      "ctaLabel": "Ver ofertas",
+      "heroImage": "/media/acme_motors/suv-feirao-2025.jpg",
+      "validUntil": "2025-12-31",
+      "cars": []
+    },
+    {
+      "id": 4,
+      "tenantId": "globex_auto",
+      "slug": "electric-future",
+      "lang": "en-US",
+      "title": "Electric Future Event",
+      "description": "Test-drive the latest Globex EV lineup.",
+      "ctaLabel": "Book a test drive",
+      "heroImage": "/media/globex_auto/ev-lineup.jpg",
+      "validUntil": "2025-09-30",
+      "cars": [
+        {
+          "model": "Globex Volt X",
+          "year": 2025,
+          "priceFrom": 39990,
+          "currency": "USD",
+          "image": "/media/globex_auto/volt-x.jpg",
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "tenantId": "globex_auto",
+      "slug": "electric-future",
+      "lang": "es-ES",
+      "title": "Evento Futuro Eléctrico",
+      "description": "Prueba la nueva línea de vehículos eléctricos Globex.",
+      "ctaLabel": "Agenda tu test drive",
+      "heroImage": "/media/globex_auto/ev-lineup.jpg",
+      "validUntil": "2025-09-30",
+      "cars": []
+    },
+    {
+      "id": 8,
+      "tenantId": "globex_auto",
+      "slug": "electric-future",
+      "lang": "pt-BR",
+      "title": "Futuro Elétrico Globex",
+      "description": "Faça um test drive e descubra a nova linha de carros elétricos Globex.",
+      "ctaLabel": "Agendar test drive",
+      "heroImage": "/media/globex_auto/ev-lineup.jpg",
+      "validUntil": "2025-09-30",
+      "cars": [
+        {
+          "model": "Globex Volt X",
+          "year": 2025,
+          "priceFrom": 199900,
+          "currency": "BRL",
+          "image": "/media/globex_auto/volt-x.jpg",
+          "highlight": true
+        },
+        {
+          "model": "Globex EcoDrive",
+          "year": 2024,
+          "priceFrom": 149900,
+          "currency": "BRL",
+          "image": "/media/globex_auto/eco-drive.jpg",
+          "highlight": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "tenantId": "andina_cars",
+      "slug": "andes-special",
+      "lang": "es-ES",
+      "title": "Especial SUV Andes",
+      "description": "Vehículos preparados para cualquier terreno de la cordillera.",
+      "ctaLabel": "Explorar modelos",
+      "heroImage": "/media/andina_cars/andes-suv.jpg",
+      "validUntil": "2025-11-30",
+      "cars": [
+        {
+          "model": "Andina Trek 4x4",
+          "year": 2024,
+          "priceFrom": 28990,
+          "currency": "USD",
+          "image": "/media/andina_cars/trek-4x4.jpg",
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "tenantId": "andina_cars",
+      "slug": "andes-special",
+      "lang": "pt-BR",
+      "title": "Especial SUV Andes",
+      "description": "SUVs prontos para qualquer terreno na cordilheira.",
+      "ctaLabel": "Ver modelos",
+      "heroImage": "/media/andina_cars/andes-suv.jpg",
+      "validUntil": "2025-11-30",
+      "cars": []
+    }
+  ]
+}

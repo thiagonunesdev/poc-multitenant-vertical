@@ -1,0 +1,61 @@
+{
+  "tenants": [
+    {
+      "id": "acme_motors",
+      "name": "ACME Motors",
+      "domain": "acme.localhost",
+      "defaultLang": "en-US",
+      "supportedLangs": [
+        "pt-BR",
+        "en-US",
+        "es-ES"
+      ],
+      "theme": {
+        "primary": "#ff00ea",
+        "secondary": "#1cfe0b"
+      },
+      "logoUrl": "https://placehold.co/200x80?text=ACME",
+      "country": "BR",
+      "seo": {
+        "title": "Por Monorepo + Turborepo",
+        "description": "Uma poc para validar a nova arquitetura"
+      }
+    },
+    {
+      "id": "globex_auto",
+      "name": "Globex Auto",
+      "domain": "globex.localhost",
+      "defaultLang": "en-US",
+      "supportedLangs": [
+        "en-US",
+        "es-ES"
+      ],
+      "theme": {
+        "primaryColor": "#bababa",
+        "secondaryColor": "#15803d"
+      },
+      "logoUrl": "https://placehold.co/200x80?text=Globex",
+      "country": "US",
+      "seo": {
+        "title": "Globbbbbbbbsssb",
+        "description": "testesrwesddddsdssdsdsdsd"
+      }
+    },
+    {
+      "id": "andina_cars",
+      "name": "Andina Cars",
+      "domain": "andina.localhost",
+      "defaultLang": "es-ES",
+      "supportedLangs": [
+        "es-ES",
+        "pt-BR"
+      ],
+      "theme": {
+        "primaryColor": "#f97316",
+        "secondaryColor": "#ea580c"
+      },
+      "logoUrl": "https://placehold.co/200x80?text=Andina",
+      "country": "CL"
+    }
+  ]
+}

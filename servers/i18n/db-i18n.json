@@ -1,0 +1,102 @@
+{
+  "translations": [
+    {
+      "id": 1,
+      "tenantId": "acme_motors",
+      "lang": "pt-BR",
+      "key": "campaign.title",
+      "value": "Encontre o carro perfeito para voc\u00ea"
+    },
+    {
+      "id": 2,
+      "tenantId": "acme_motors",
+      "lang": "pt-BR",
+      "key": "campaign.subtitle",
+      "value": "Ofertas exclusivas ACME Motors"
+    },
+    {
+      "id": 3,
+      "tenantId": "acme_motors",
+      "lang": "en-US",
+      "key": "campaign.title",
+      "value": "Find your perfect car"
+    },
+    {
+      "id": 4,
+      "tenantId": "acme_motors",
+      "lang": "en-US",
+      "key": "campaign.subtitle",
+      "value": "Exclusive ACME Motors deals"
+    },
+    {
+      "id": 5,
+      "tenantId": "acme_motors",
+      "lang": "es-ES",
+      "key": "campaign.title",
+      "value": "Encuentra tu coche perfecto"
+    },
+    {
+      "id": 6,
+      "tenantId": "acme_motors",
+      "lang": "es-ES",
+      "key": "campaign.subtitle",
+      "value": "Ofertas exclusivas ACME Motors"
+    },
+    {
+      "id": 7,
+      "tenantId": "globex_auto",
+      "lang": "en-US",
+      "key": "campaign.title",
+      "value": "Drive the future with Globex"
+    },
+    {
+      "id": 8,
+      "tenantId": "globex_auto",
+      "lang": "en-US",
+      "key": "campaign.subtitle",
+      "value": "Premium cars, global experience"
+    },
+    {
+      "id": 9,
+      "tenantId": "globex_auto",
+      "lang": "es-ES",
+      "key": "campaign.title",
+      "value": "Conduce el futuro con Globex"
+    },
+    {
+      "id": 10,
+      "tenantId": "globex_auto",
+      "lang": "es-ES",
+      "key": "campaign.subtitle",
+      "value": "Autos premium, experiencia global"
+    },
+    {
+      "id": 11,
+      "tenantId": "andina_cars",
+      "lang": "es-ES",
+      "key": "campaign.title",
+      "value": "Tu pr\u00f3ximo auto te espera en Andina"
+    },
+    {
+      "id": 12,
+      "tenantId": "andina_cars",
+      "lang": "es-ES",
+      "key": "campaign.subtitle",
+      "value": "Financiamiento flexible para toda la regi\u00f3n"
+    },
+    {
+      "id": 13,
+      "tenantId": "andina_cars",
+      "lang": "pt-BR",
+      "key": "campaign.title",
+      "value": "Seu pr\u00f3ximo carro est\u00e1 na Andina"
+    },
+    {
+      "id": 14,
+      "tenantId": "andina_cars",
+      "lang": "pt-BR",
+      "key": "campaign.subtitle",
+      "value": "Financiamento flex\u00edvel para toda a regi\u00e3o"
+    }
+  ]
+}
