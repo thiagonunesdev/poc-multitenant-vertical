@@ -45,6 +45,7 @@ const SCOPE_CONFIG = {
     appName: "platform",
     allowedPatterns: [
       /^apps\//,
+      /^scripts\//,
       /^packages\//,
 
       // ✅ root permitido só pra plataforma
@@ -58,6 +59,7 @@ const SCOPE_CONFIG = {
       /^tsconfig\.json$/,
       /^\.editorconfig$/,
       /^\.gitignore$/,
+      /^\.github\//,
     ],
   },
 };

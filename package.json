@@ -17,6 +17,7 @@
     "lint:admin": "turbo run lint --filter=admin...",
     "lint:docs": "turbo run lint --filter=docs...",
     "lint:gateway": "turbo run lint --filter=gateway...",
+    "scope:check": "node scripts/ci-scope-check.cjs",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
     "generate:ui": "node scripts/shadcn-to-ui.cjs",
