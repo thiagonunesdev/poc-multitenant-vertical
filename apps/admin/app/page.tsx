@@ -1,6 +1,7 @@
 import type { JSX } from "react";
 import type { Tenant } from "@repo/core-config";
 import { Card, Button } from "@repo/ui";
+import Link from "next/link";
 
 export const revalidate = 0;
 
@@ -52,8 +53,8 @@ export default async function AdminHome(): Promise<JSX.Element> {
         >
           {tenants.map((tenant) => {
             const langs = tenant.supportedLangs.join(", ");
-            const storefrontUrl = `http://localhost:3000/org/${tenant.id}/anuncios`;
-            const adminOrgUrl = `/org/${tenant.id}`;
+            const storefrontUrl = `/org/${tenant.id}`;
+            const adminOrgUrl = `/admin/org/${tenant.id}`;
 
             return (
               <Card key={tenant.id} className="space-y-3">
@@ -112,12 +113,16 @@ export default async function AdminHome(): Promise<JSX.Element> {
                 <div className="pt-3 flex flex-wrap gap-2 items-center justify-between">
                   <div className="flex gap-2">
                     <Button variant="outline" size="sm" asChild>
-                      <a href={storefrontUrl} target="_blank" rel="noreferrer">
+                      <Link
+                        href={storefrontUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         Abrir storefront
-                      </a>
+                      </Link>
                     </Button>
                     <Button size="sm" asChild>
-                      <a href={adminOrgUrl}>Configurar org</a>
+                      <Link href={adminOrgUrl}>Configurar org</Link>
                     </Button>
                   </div>
 

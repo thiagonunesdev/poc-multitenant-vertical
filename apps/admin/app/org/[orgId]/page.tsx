@@ -2,6 +2,7 @@ import type { JSX } from "react";
 import type { Tenant } from "@repo/core-config";
 import { Card, Button } from "@repo/ui";
 import { TenantConfigForm } from "./tenant-config-form";
+import Link from "next/link";
 
 interface TenantPageProps {
   params: Promise<{
@@ -55,14 +56,14 @@ export default async function TenantPage(
 
         <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
           <Button variant="outline" size="sm" asChild>
-            <a href="/" rel="noreferrer">
+            <Link href="/" rel="noreferrer">
               Voltar para lista
-            </a>
+            </Link>
           </Button>
           <Button size="sm" asChild>
-            <a href={storefrontUrl} target="_blank" rel="noreferrer">
+            <Link href={storefrontUrl} target="_blank" rel="noreferrer">
               Ver storefront
-            </a>
+            </Link>
           </Button>
         </div>
       </header>
@@ -129,7 +130,7 @@ export default async function TenantPage(
             </div>
             <div>
               <label className="block text-xs text-slate-500 mb-1">
-                Idiomas suportados
+                Idiomas suportados s
               </label>
               <input
                 readOnly
