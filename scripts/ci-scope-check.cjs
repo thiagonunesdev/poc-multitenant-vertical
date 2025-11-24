@@ -48,6 +48,7 @@ const SCOPE_CONFIG = {
       /^tsconfig\.json$/,
       /^\.editorconfig$/,
       /^\.gitignore$/,
+      /^\.github\//,
     ],
   },
 };
