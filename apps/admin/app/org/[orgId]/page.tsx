@@ -130,7 +130,7 @@ export default async function TenantPage(
             </div>
             <div>
               <label className="block text-xs text-slate-500 mb-1">
-                Idiomas suportados
+                Idiomas suportados s
               </label>
               <input
                 readOnly

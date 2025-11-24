@@ -12,7 +12,8 @@ export default function HomePage(): JSX.Element {
         <code className="px-1 py-0.5 rounded bg-slate-200 text-xs">
           storefront
         </code>
-        , e a navegação entre páginas usa o roteador do Next (sem full reload).
+        , e a navegação entre páginas x usa o roteador do Next (sem full
+        reload).
       </p>
 
       <Link
