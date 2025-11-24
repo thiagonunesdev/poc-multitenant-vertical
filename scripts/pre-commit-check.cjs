@@ -14,11 +14,10 @@ function getStagedFiles() {
 }
 
 function isFileAllowed(file, patterns) {
-  // ignorar alguns arquivos genéricos, se quiser
+  // ignorar alguns arquivos genéricos
   if (file.startsWith(".husky/")) return true;
   if (file === "pnpm-lock.yaml") return true;
-  if (file === "package.json") return true; // se quiser, pode endurecer isso
-
+  if (file === "package.json") return true;
   return patterns.some((pattern) => pattern.test(file));
 }
 
