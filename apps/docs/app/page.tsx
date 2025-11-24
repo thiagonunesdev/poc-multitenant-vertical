@@ -7,6 +7,8 @@ type Props = Omit<ImageProps, "src"> & {
   srcDark: string;
 };
 
+const breakBuild: number = "quebrei o docs";
+
 const ThemeImage = (props: Props) => {
   const { srcLight, srcDark, ...rest } = props;
 
