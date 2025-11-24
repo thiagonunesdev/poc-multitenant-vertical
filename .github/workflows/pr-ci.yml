@@ -1,0 +1,58 @@
+name: pr-ci
+
+on:
+  pull_request:
+    branches: [main, develop]
+  workflow_dispatch: {}
+
+jobs:
+  # 1) Primeiro roda a validação de escopo/lint (o teu guard)
+  scope-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+
+      - uses: pnpm/action-setup@v4
+        with: { run_install: false }
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm scope:check
+
+  # 2) Job CRÍTICO: storefront tem que passar
+  build-storefront:
+    needs: scope-check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+
+      - uses: pnpm/action-setup@v4
+        with: { run_install: false }
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm turbo run build --filter=storefront...
+
+  # 3) Job NÃO-CRÍTICO: docs pode falhar e mesmo assim o workflow fica verde
+  build-docs:
+    needs: scope-check
+    runs-on: ubuntu-latest
+    continue-on-error: true # 👈 ESSA LINHA É A MÁGICA DO CENÁRIO 6
+    steps:
+      - uses: actions/checkout@v4
+        with: { fetch-depth: 0 }
+
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+
+      - uses: pnpm/action-setup@v4
+        with: { run_install: false }
+
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm turbo run build --filter=docs...
