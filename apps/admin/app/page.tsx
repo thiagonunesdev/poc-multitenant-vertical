@@ -118,7 +118,7 @@ export default async function AdminHome(): Promise<JSX.Element> {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Abrir storefronts
+                        Abrir storefront
                       </Link>
                     </Button>
                     <Button size="sm" asChild>
