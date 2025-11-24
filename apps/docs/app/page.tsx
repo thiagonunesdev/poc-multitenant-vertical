@@ -6,7 +6,7 @@ type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
   srcDark: string;
 };
-
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const breakBuild: number = "quebrei o docs";
 
 const ThemeImage = (props: Props) => {
